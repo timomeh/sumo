@@ -1,0 +1,17 @@
+{
+  "name": "mail-summary-service",
+  "version": "0.1.0",
+  "description": "Get summaries of new mails",
+  "main": "index.js",
+  "scripts": {
+    "start": "node worker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Timo Mämecke",
+  "license": "MIT",
+  "dependencies": {
+    "imap": "^0.8.19",
+    "mailparser": "^2.0.5",
+    "nodemailer": "^4.0.1"
+  }
+}

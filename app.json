@@ -1,0 +1,90 @@
+{
+  "name": "Sumo - Scheduled summary of new mails",
+  "description": "Get scheduled notifications of new mails in a specific IMAP directory (or Gmail Label).",
+  "repository": "https://github.com/timomeh/sumo",
+  "addons": [
+    {
+      "plan": "scheduler:standard"
+    }
+  ],
+  "keywords": [
+    "mail",
+    "productivity",
+    "worker",
+    "schedule",
+    "summary"
+  ],
+  "env": {
+    "IMAP_USER": {
+      "description": "The IMAP user to log into your account.",
+      "value": "yourmail@somemail.com"
+    },
+    "IMAP_PASS": {
+      "description": "The password for your IMAP user.",
+      "value": "xxx"
+    },
+    "IMAP_HOST": {
+      "description": "The host of your IMAP server.",
+      "value": "imap.gmail.com"
+    },
+    "IMAP_PORT": {
+      "description": "Port of your IMAP server. (default = 993)",
+      "value": "993",
+      "required": false
+    },
+    "IMAP_TLS": {
+      "description": "Whether to use TLS or not. (default = true)",
+      "value": "true",
+      "required": false
+    },
+    "IMAP_MAILBOX": {
+      "description": "The name of the IMAP Directory (or Gmail label) to check for new Mails.",
+      "value": "Limbo"
+    },
+    "SUMO_ADAPTER": {
+      "description": "Which adapter to use to send Notifications. (default = SMTP)",
+      "value": "SMTP",
+      "required": false
+    },
+    "SMTP_USER": {
+      "description": "The SMTP user to log into your account to send Notifications.",
+      "value": "yourmail@somemail.com"
+    },
+    "SMTP_PASS": {
+      "description": "Password for your SMTP user.",
+      "value": "xxx"
+    },
+    "SMTP_HOST": {
+      "description": "The host of your SMTP server.",
+      "value": "smtp.gmail.com"
+    },
+    "SMTP_PORT": {
+      "description": "Port of your SMTP server. (default = 465)",
+      "value": "465",
+      "required": false
+    },
+    "SMTP_SECURE": {
+      "description": "Whether to use a secure connection or not. (default = true)",
+      "value": "true",
+      "required": false
+    },
+    "SMTP_FROM_EMAIL": {
+      "description": "The Email Address to send the mail from.",
+      "value": "yourmail@somemail.com"
+    },
+    "SMTP_TO_EMAIL": {
+      "description": "The Email Address to send the mail to.",
+      "value": "yourmail@somemail.com"
+    },
+    "SMTP_MAIL_SUBJECT": {
+      "description": "The Subject of the Notification Mail. (default = Scheduled sumo notification)",
+      "value": "Scheduled sumo notification",
+      "required": false
+    },
+    "SMTP_MAIL_GREETING": {
+      "description": "The Beginning of the Notification Mail. (default = Hi! ...)",
+      "value": "Hi!<br><br>Summary of your Inbox:<br><br>",
+      "required": false
+    }
+  }
+}
