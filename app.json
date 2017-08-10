@@ -1,5 +1,5 @@
 {
-  "name": "Sumo - Scheduled summary of new mails",
+  "name": "sumo",
   "description": "Get scheduled notifications of new mails in a specific IMAP directory (or Gmail Label).",
   "repository": "https://github.com/timomeh/sumo",
   "addons": [
