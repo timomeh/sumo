@@ -99,9 +99,11 @@ const adapters = {
 
 const GenericAdapter = require('../lib/generic-adapter')
 
-module.exports = class SMTPAdapter extends GenericAdapter {
+module.exports = class FancyAdapter extends GenericAdapter {
   constructor(mails) {
     super(mails)
+
+    // `this.mails = mails` is already configured in the Superclass.
   }
 
   run() {
