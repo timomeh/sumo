@@ -2,11 +2,11 @@
 
 > For those mails which aren't important, but you still want to keep an eye on them.
 
-sumo is a productivity tool, which checks your mail account for new mails in a specific directory (or Gmail label). If it sees new mails, it marks them as read and sends you a summary of those new mails. Currently the only adapter to send that summary is SMTP, so it basically sends you a Mail. But it is easy to contribute and add more adapters! 🎉
+sumo is a productivity tool, which periodically checks a directory (or Gmail label) in your mail inbox for new mails, sends you a summary of them and marks those mails as read. Keep your inbox clean, but also don't miss something! Currently it sends the summary via mail, but sumo is programmed to be extendable with more adapters. Feel free to contribute more adapters! 🎉
 
 A mail containing a list of new mails? **This may sound silly, but it really isn't.**
 
-This works perfect with mailbox filters for new mails, which are unimportant (or even Spam), but sometimes there are a few important mails. Read more in [Background](#background).
+This works perfectly with mailbox filters. Move those mails, which aren't really important (like newsletters or spammy mails), automatically in a separate directory and keep your Inbox clean. Lean back and let sumo send you a summary of those mails daily, once a week or whenever you'd like to. You can read more about my usecase and why I built sumo in the section [Background](#background).
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ This works perfect with mailbox filters for new mails, which are unimportant (or
 
 ## Background
 
-In my case, I get a lot of spam to the email address, which is listed in the WHOIS of my domains. But sometimes important mails can get delivered to that email address, like mails from [ICANN](https://www.icann.org/). With sumo, I can use an email alias like "mymailaccount+hostmaster@gmail.com" in my WHOIS, and configure an appropriate Gmail filter, which archives and labels mails delivered to that address. Now those mails don't distract me, but once a week I get a summary and can see if I got an important mail between all those spam mails.
+I get a lot of spam to the email address, which is listed in the WHOIS of my domains. But sometimes important mails can get delivered to that email address, like mails from [ICANN](https://www.icann.org/). With sumo, I can use an email alias like "mymailaccount+hostmaster@gmail.com" in my WHOIS, and configure an appropriate Gmail filter, which archives and labels mails delivered to that address. Now those mails won't distract me, but once a week I get a summary and can see if I got an important mail between all those spam mails.
 
 ## Usage, the very simple way
 
