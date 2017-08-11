@@ -73,6 +73,7 @@ Feel free to contribute! 🚀 More Adapters would be great. Everything is possib
 1. Add a new file to `/adapters` (see `/adapters/smpt.js` for an example)
 2. Register it in `/lib/send-to-adapter.js`
 3. Set the `SUMO_ADATER` environment variable to your new registered adapter.
+4. Open a [Pull Request](https://github.com/timomeh/sumo/pulls) so everyone can use your awesome adapter!
 
 If you need to provide customizable data, use environment variables.
 
