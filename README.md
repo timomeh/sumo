@@ -18,7 +18,7 @@ This works perfect with mailbox filters for new mails, which are unimportant (or
 	- [Requirements](#requirements)
 - [More useful Informations](#more-useful-informations)
 	- [Usage with Gmail](#usage-with-gmail)
-	- [Want to check more inboxes / directories / labels?](#want-to-check-more-inboxes-directories-labels)
+	- [Want to check more inboxes, directories, labels?](#want-to-check-more-inboxes-directories-labels)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -62,7 +62,7 @@ if [ "$(date +%u)" = 3 ]; then npm start; fi
 
 If you want to use sumo with your Gmail Account, you need to create an [App password](https://myaccount.google.com/apppasswords). Your Google password won't work.
 
-### Want to check more inboxes / directories / labels?
+### Want to check more inboxes, directories, labels?
 
 Simply deploy more instances. 🙂
 
